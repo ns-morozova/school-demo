@@ -15,11 +15,13 @@ import { RouterLink } from 'vue-router'
         <div class="card-body">
           <h2 class="card-title">Скоро познакомимся</h2>
           <p>
-            Мы готовимся к запуску. Профили преподавателей появятся на этой странице перед
-            открытием записи на обучение.
+            Мы готовимся к запуску. Профили преподавателей появятся на этой странице перед открытием
+            записи на обучение.
           </p>
           <div class="card-actions mt-2">
-            <RouterLink to="/" class="btn btn-primary btn-outline">Посмотреть курсы</RouterLink>
+            <RouterLink to="/courses" class="btn btn-primary btn-outline"
+              >Посмотреть курсы</RouterLink
+            >
           </div>
         </div>
       </div>

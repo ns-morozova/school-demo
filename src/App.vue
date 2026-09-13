@@ -17,7 +17,7 @@ import AppFooter from './components/layout/AppFooter.vue'
     <main
       id="main-content"
       tabindex="-1"
-      class="mx-auto w-full max-w-6xl flex-1 px-4 pt-36 pb-10 sm:px-6 sm:pt-24"
+      class="mx-auto w-full max-w-6xl flex-1 px-4 pt-24 pb-10 sm:px-6"
     >
       <RouterView />
     </main>

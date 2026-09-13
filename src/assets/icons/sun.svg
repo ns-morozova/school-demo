@@ -1,0 +1,21 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sunCore" x1="7" y1="7" x2="17" y2="17" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#81CA90"/>
+      <stop offset="1" stop-color="#58B560"/>
+    </linearGradient>
+    <linearGradient id="sunRays" x1="12" y1="2" x2="12" y2="22" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22B85A"/>
+      <stop offset="1" stop-color="#58C77D"/>
+    </linearGradient>
+  </defs>
+  <circle cx="12" cy="12" r="4.5" fill="url(#sunCore)"/>
+  <path d="M12 2.5V5" stroke="url(#sunRays)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M12 19V21.5" stroke="url(#sunRays)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M21.5 12H19" stroke="url(#sunRays)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M5 12H2.5" stroke="url(#sunRays)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M18.7178 5.28223L16.9501 7.04999" stroke="url(#sunRays)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M7.05029 16.9497L5.28252 18.7175" stroke="url(#sunRays)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M18.7178 18.7178L16.9501 16.9501" stroke="url(#sunRays)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M7.05029 7.05029L5.28252 5.28252" stroke="url(#sunRays)" stroke-width="2" stroke-linecap="round"/>
+</svg>
