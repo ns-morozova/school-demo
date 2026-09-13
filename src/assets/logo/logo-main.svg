@@ -1,0 +1,21 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="topGradient" x1="13" y1="14" x2="51" y2="39" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#58B560"/>
+      <stop offset="1" stop-color="#22B85A"/>
+    </linearGradient>
+    <linearGradient id="bottomGradient" x1="20" y1="34" x2="45" y2="53" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#81CA90"/>
+      <stop offset="1" stop-color="#58C77D"/>
+    </linearGradient>
+    <linearGradient id="tasselGradient" x1="51" y1="28" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#81CA90"/>
+      <stop offset="1" stop-color="#58C77D"/>
+    </linearGradient>
+  </defs>
+  <path d="M16.8 33.3L27.7 38.1C30.5 39.35 33.5 39.35 36.3 38.1L47.8 33.3V45.4C47.8 50.1 40.7 53.5 32.2 53.5C23.5 53.5 16.8 50.1 16.8 45.4V33.3Z" fill="url(#bottomGradient)"/>
+  <path d="M30.8 10.1C31.55 9.78 32.45 9.78 33.2 10.1L59.1 21.2C60.45 21.78 60.45 23.45 59.1 24.02L35.05 34.35C33.1 35.18 30.9 35.18 28.95 34.35L4.9 24.02C3.55 23.45 3.55 21.78 4.9 21.2L30.8 10.1Z" fill="url(#topGradient)"/>
+  <path d="M54.5 25.7V39.1" stroke="url(#tasselGradient)" stroke-width="2.1" stroke-linecap="round"/>
+  <circle cx="54.5" cy="40.5" r="2.8" fill="url(#tasselGradient)"/>
+  <path d="M52.55 42.2L50.25 54.1C50.05 55.15 51.9 55.9 54.5 55.9C57.1 55.9 58.95 55.15 58.75 54.1L56.45 42.2H52.55Z" fill="url(#tasselGradient)"/>
+</svg>
