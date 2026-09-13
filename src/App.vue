@@ -5,10 +5,10 @@ import AppFooter from './components/layout/AppFooter.vue'
 </script>
 
 <template>
-  <div class="flex min-h-screen flex-col bg-base-200 text-base-content">
+  <div class="flex min-h-screen flex-col bg-base-100 dark:bg-base-200 text-base-content">
     <a
       href="#main-content"
-      class="btn btn-primary fixed left-4 top-4 z-[60] -translate-y-24 focus:translate-y-0"
+      class="btn btn-primary fixed left-4 top-4 z-60 -translate-y-24 focus:translate-y-0"
     >
       К содержимому
     </a>

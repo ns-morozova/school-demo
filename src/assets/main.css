@@ -1,6 +1,12 @@
 @import 'tailwindcss';
+@custom-variant dark (&:where([data-theme='forest'], [data-theme='forest'] *));
 @plugin "daisyui" {
   themes:
     emerald --default,
     forest;
+}
+
+:root,
+[data-theme='emerald'] {
+  --radius-field: 2rem;
 }

@@ -6,7 +6,7 @@ import CourseCard from '@/components/CourseCard.vue'
 <template>
   <div class="space-y-10">
     <section aria-labelledby="catalog-title" class="space-y-4">
-      <h1 id="catalog-title" class="text-3xl font-bold sm:text-4xl">Курсы</h1>
+      <h1 id="catalog-title" class="text-3xl font-bold sm:text-4xl">Каталог курсов</h1>
       <p class="text-base-content/70">
         Готовим первые программы. Даты старта и условия обучения появятся здесь.
       </p>

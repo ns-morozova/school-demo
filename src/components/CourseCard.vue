@@ -11,7 +11,18 @@ withDefaults(
 </script>
 
 <template>
-  <article class="card border border-base-300 bg-base-100">
+  <article class="card overflow-hidden border border-base-300 bg-base-100">
+    <figure class="aspect-3/2 bg-base-200">
+      <img
+        :src="course.image"
+        alt=""
+        width="768"
+        height="512"
+        loading="lazy"
+        decoding="async"
+        class="h-full w-full object-cover"
+      />
+    </figure>
     <div class="card-body gap-4">
       <span class="badge badge-secondary badge-outline">{{ course.category }}</span>
       <component :is="headingTag" class="card-title">{{ course.title }}</component>

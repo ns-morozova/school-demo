@@ -1,14 +1,16 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="moonGradient" x1="7" y1="4" x2="17" y2="20" gradientUnits="userSpaceOnUse">
+    <linearGradient id="moonGradient" x1="6.1667" y1="2.6667" x2="17.8333" y2="21.3333" gradientUnits="userSpaceOnUse">
       <stop stop-color="#81CA90"/>
       <stop offset="1" stop-color="#58B560"/>
     </linearGradient>
-    <mask id="moonMask">
+    <mask id="moonMask" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
       <rect width="24" height="24" fill="black"/>
-      <circle cx="12" cy="12" r="9" fill="white"/>
-      <circle cx="8" cy="9.5" r="8.5" fill="black"/>
+      <circle cx="12" cy="12" r="10.5" fill="white"/>
+      <circle cx="7.3333" cy="9.0833" r="9.9167" fill="black"/>
     </mask>
   </defs>
-  <circle cx="12" cy="12" r="9" fill="url(#moonGradient)" mask="url(#moonMask)"/>
+  <g transform="translate(12 11.9) scale(1.14) translate(-13 -12.1)">
+    <circle cx="12" cy="12" r="10.5" fill="url(#moonGradient)" mask="url(#moonMask)"/>
+  </g>
 </svg>

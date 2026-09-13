@@ -75,7 +75,7 @@ onBeforeUnmount(() => {
       </RouterLink>
 
       <nav aria-label="Основная навигация" class="hidden justify-self-center lg:block">
-        <ul class="flex items-center gap-6">
+        <ul class="flex items-center gap-10">
           <li v-for="link in links" :key="link.to">
             <RouterLink
               :to="link.to"
