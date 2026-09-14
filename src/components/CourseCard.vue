@@ -1,13 +1,8 @@
 <script setup lang="ts">
 import type { courses } from '@/data/courses'
-
-withDefaults(
-  defineProps<{
-    course: (typeof courses)[number]
-    headingTag?: 'h2' | 'h3'
-  }>(),
-  { headingTag: 'h2' },
-)
+defineProps<{
+  course: (typeof courses)[number]
+}>()
 </script>
 
 <template>
@@ -25,7 +20,7 @@ withDefaults(
     </figure>
     <div class="card-body gap-4">
       <span class="badge badge-secondary badge-outline">{{ course.category }}</span>
-      <component :is="headingTag" class="card-title">{{ course.title }}</component>
+      <h3 class="card-title">{{ course.title }}</h3>
       <p>{{ course.description }}</p>
       <span class="text-sm text-base-content/60">Скоро открытие</span>
     </div>

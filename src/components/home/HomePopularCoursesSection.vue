@@ -18,7 +18,6 @@ const popularCourses = courses.filter((course) => course.popular).slice(0, 3)
         v-for="course in popularCourses"
         :key="course.title"
         :course="course"
-        heading-tag="h3"
       />
     </div>
   </section>

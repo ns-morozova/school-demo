@@ -1,30 +1,44 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
+import TeacherCard from '@/components/TeacherCard.vue'
+
+const teachers = [
+{
+    id: 1,
+    name: 'Анна Иванова',
+    category: 'Frontend',
+    course: 'Vue.js',
+  },
+  {
+    id: 2,
+    name: 'Иван Петров',
+    category: 'Backend',
+    course: 'Node.js',
+  },
+  {
+    id: 3,
+    name: 'Мария Сидорова',
+    category: 'Дизайн',
+    course: 'UI/UX',
+  },
+]
 </script>
 
 <template>
-  <div class="space-y-10">
-    <section aria-labelledby="teachers-title" class="space-y-4">
-      <span class="badge badge-secondary badge-outline">Команда Nova School</span>
-      <h1 id="teachers-title" class="text-3xl font-bold sm:text-4xl">Преподаватели</h1>
-      <p class="max-w-2xl text-base-content/70">
-        Здесь мы познакомим вас с преподавателями онлайн-школы: расскажем об их опыте и курсах,
-        которые они ведут.
+  <div class="space-y-4">
+    <h1 class="text-3xl font-bold sm:text-4xl">Наши преподаватели</h1>
+
+    <p class="text-base-content/70">
+        Познакомьтесь с нашими преподавателями
       </p>
-      <div class="card border border-base-300 bg-base-100">
-        <div class="card-body">
-          <h2 class="card-title">Скоро познакомимся</h2>
-          <p>
-            Мы готовимся к запуску. Профили преподавателей появятся на этой странице перед открытием
-            записи на обучение.
-          </p>
-          <div class="card-actions mt-2">
-            <RouterLink to="/courses" class="btn btn-primary btn-outline"
-              >Посмотреть курсы</RouterLink
-            >
-          </div>
-        </div>
-      </div>
-    </section>
+
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <TeacherCard
+        v-for="teacher in teachers"
+        :key="teacher.id"
+        :name="teacher.name"
+        :category="teacher.category"
+        :course="teacher.course"
+      />
+    </div>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
-import Hero from '@/assets/images/Hero.png'
+import Hero from '@/assets/images/hero.png'
 </script>
 
 <template>

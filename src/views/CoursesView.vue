@@ -11,7 +11,11 @@ import CourseCard from '@/components/CourseCard.vue'
         Готовим первые программы. Даты старта и условия обучения появятся здесь.
       </p>
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <CourseCard v-for="course in courses" :key="course.title" :course="course" />
+        <CourseCard
+          v-for="course in courses"
+          :key="course.title"
+          :course="course"
+        />
       </div>
     </section>
   </div>
