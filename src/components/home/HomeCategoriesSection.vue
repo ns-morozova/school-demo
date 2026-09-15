@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import CategoryCard from '../CategoryCard.vue'
+import CategoryCard from '@/components/cards/CategoryCard.vue'
 import { categories } from '@/data/categories'
 </script>
 

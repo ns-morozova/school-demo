@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TeacherCard from '@/components/TeacherCard.vue'
+import TeacherCard from '@/components/cards/TeacherCard.vue'
 
 const teachers = [
 {

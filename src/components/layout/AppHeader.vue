@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
+import AuthModal from '@/components/auth/AuthModal.vue'
 import logoMain from '@/assets/logo/logo-main.svg'
 import moonIcon from '@/assets/icons/moon.svg'
 import sunIcon from '@/assets/icons/sun.svg'
+import profileIcon from '@/assets/icons/profile.svg'
 
 const route = useRoute()
 const theme = ref(document.documentElement.dataset.theme ?? 'emerald')
@@ -15,6 +17,7 @@ const links = [
   { to: '/courses', label: 'Курсы' },
   { to: '/teachers', label: 'Преподаватели' },
 ]
+const isAuthModalOpen = ref(false)
 
 function toggleTheme() {
   theme.value = theme.value === 'forest' ? 'emerald' : 'forest'
@@ -34,6 +37,14 @@ function onEscape(event: KeyboardEvent) {
 
 function onOutsideInteraction(event: Event) {
   if (event.target instanceof Node && !header.value?.contains(event.target)) closeMenu()
+}
+
+function openAuthModal() {
+  isAuthModalOpen.value = true
+}
+
+function closeAuthModal() {
+  isAuthModalOpen.value = false
 }
 
 let desktopQuery: MediaQueryList | undefined
@@ -97,6 +108,17 @@ onBeforeUnmount(() => {
         >
           <img :src="theme === 'forest' ? sunIcon : moonIcon" alt="" class="size-6" />
         </button>
+
+        <button
+          type="button"
+          class="btn btn-ghost btn-square"
+          @click="openAuthModal"
+          aria-label="Профиль"
+          title="Профиль"
+        >
+          <img :src="profileIcon" alt="" class="size-6" />
+        </button>
+
         <button
           ref="menuButton"
           type="button"
@@ -141,4 +163,9 @@ onBeforeUnmount(() => {
       </ul>
     </nav>
   </header>
+
+  <AuthModal
+    v-if="isAuthModalOpen"
+    @close="closeAuthModal"
+  />
 </template>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 import { courses } from '@/data/courses'
-import CourseCard from '@/components/CourseCard.vue'
+import CourseCard from '@/components/cards/CourseCard.vue'
 
 const popularCourses = courses.filter((course) => course.popular).slice(0, 3)
 </script>

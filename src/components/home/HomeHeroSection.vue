@@ -1,6 +1,18 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+import { ref } from 'vue';
+import AuthModal from '@/components/auth/AuthModal.vue';
 import Hero from '@/assets/images/hero.png'
+
+const isAuthModalOpen = ref(false)
+
+function openAuthModal() {
+  isAuthModalOpen.value = true
+}
+
+function closeAuthModal() {
+  isAuthModalOpen.value = false
+}
 </script>
 
 <template>
@@ -15,7 +27,12 @@ import Hero from '@/assets/images/hero.png'
         жизни.
       </p>
       <div class="w-full flex flex-col gap-3 lg:flex-row">
-        <RouterLink to="/" class="btn btn-primary">Начать обучение</RouterLink>
+        <button
+          class="btn btn-primary"
+          @click="openAuthModal"
+        >
+          Начать обучение
+        </button>
         <RouterLink to="/courses" class="btn btn-outline">Посмотреть программы</RouterLink>
       </div>
     </div>
@@ -24,4 +41,9 @@ import Hero from '@/assets/images/hero.png'
       <img :src="Hero" alt="" class="w-full h-full object-cover" />
     </div>
   </section>
+
+  <AuthModal
+    v-if="isAuthModalOpen"
+    @close="closeAuthModal"
+  />
 </template>

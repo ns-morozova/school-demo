@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { courses } from '@/data/courses'
-import CourseCard from '@/components/CourseCard.vue'
+import CourseCard from '@/components/cards/CourseCard.vue'
 </script>
 
 <template>
